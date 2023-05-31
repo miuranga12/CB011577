@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Navigation*/
+nav{
+    background-color: #bfe0ff;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navul{
+    font-family: 'EB Garamond', serif;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*gap: 2rem;*/
+    color: white;
+    font-size: 15px;
+    align-items: center;
+}
+
+.navul li{
+    display: inline-block;
+    position: relative;
+}
+
+.navul li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.navul li ul.dropdown li {
+    display: block;
+}
+
+.navul li ul.dropdown{
+    width: 100%;
+    background: #bfe0ff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navul li a:hover{
+    /*background: #000;*/
+    color: black;
+}
+
+.navul li:hover ul.dropdown{
+    display: block;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+/*Head*/
+.Head-index{
+    background-color: #00008b;
+    color: white;
+    height: 600px;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)) , url(../Assets/turtle2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Pa{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Pa a button{
+    background-color: #4daadb;
+    border: none;
+    color: rgb(14, 3, 127);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.intro{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Playfair', serif;
+}
+
+.Head h1{
+    font-size: 60px;
+}
+
+
+.Head p{
+    text-align: center;
+    align-items: center;
+}
+
+.Head p a{
+    border: 2px solid wheat;
+    text-decoration: none;
+    /*color: white;*/
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.Head p a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Button*/
+
+/*Hatcheries Intro*/
+.hatchery{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.hatchery p{
+    text-align: center;
+    background-color: rgba(147, 238, 36, 0.279);
+}
+
+.hatcheries{
+    text-align: justify;
+    margin-left: 39%;
+}
+
+/*Threats example*/
+.thre h2{
+    text-align: justify;
+    margin-left: 39%;
+    margin-top: 3%;
+}
+
+.thre .exa{
+    text-align: justify;
+    margin-left: 39%;
+}
+
+/*Hero images*/
+
+.grid-iterms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 2rem;
+    position: absolute;
+    top: 205%;
+    width: 50%;
+    justify-content: center;
+}
+
+.grid-iterms > :nth-child(2){
+    grid-row: span 2;
+}
+
+.Hero-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Hero-images .grid-iterms .img1{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.Hero-images .grid-iterms .img2{
+    width: 300px;
+    height: 620px;
+    border-radius: 5%;
+}
+
+.Hero-images .grid-iterms .img3{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.Hero-images .grid-iterms .img4{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.Hero-images .grid-iterms .img5{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+/*embed video*/
+.iframe{
+    position: absolute;
+    top: 300%; 
+    margin: auto;
+    margin-left: 39%;
+}
+
+body{
+    background-color: #67dbc4ad;
+}
+
+/*Footer*/
+.foot{
+    background-color: #d6d4d4;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    margin-top: 60%; 
+}
+
+ /*Positioning the references*/
+ .reference{
+     display: grid;
+     padding: 10px;
+ }
+
+/*Responsive*/
+@media screen and (max-width: 600px) {
+    .topnav ul{
+      display: grid;
+    }
+
+    .Hero-images{
+      position: relative;
+      top: 2769px;
+      margin-left: -72px;
+      .grid-iterms{
+        display: inline;
+      }
+
+      .grid-iterms img{
+        margin-bottom: 10%;
+      }
+    }
+
+    .iframe {
+      position: relative;
+      left: "15%";
+      display: none;
+    }
+    .iframe div{
+      top: "3000px !important";
+    }
+
+    .intro{
+      position: relative;
+      top: 25%;
+      color: #04045c;
+    }
+
+}
+
+  @media only screen and (max-width:600px){
+    .logo{
+        margin-top: -55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hatchery h2{
+        margin-top: 250%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hatchery .Para{
+        margin-top: -5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hatcheries {
+        margin-left: 21%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .foot{
+        margin-top: 527%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .thre{
+        margin-left: -22%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .iframe{
+        top: 1963px;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .embed{
+        margin-left: 10%;
+    }
+} 
